@@ -1,0 +1,95 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Font awesome -->
+    <script src="https://kit.fontawesome.com/087894dcb8.js" crossorigin="anonymous"></script>
+    <title>RDictado'sPortfolio Website</title>
+    <link rel="stylesheet" href="designs.css">
+</head>
+<body>
+  
+        <div class="container">
+            <nav>
+                <img src="dps.jpg" class="logo">
+                
+                <ul id="sidemenu">
+                    
+                    <li><a href="https://www.facebook.com/teddy.mu6" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.youtube.com/channel/UCIWPH61RRMa_1iv2-D5nx0A" target="_blank">Youtube</a></li>
+                    <li><a href="https://www.instagram.com/geloizme/" target="_blank">Instagram</a></li>
+                    
+                    <i class="fas fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Ronn Angelo Dictado</h1><br>
+                <p>A professional web developer is a skilled and experienced individual who specializes in creating and maintaining websites. They possess a deep understanding of various programming languages, such as HTML, CSS, JavaScript,</p>
+            </div>
+        </div>
+    </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="bgs.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Meet Ronn, a passionate anime enthusiast with an unwavering love for the captivating world of Japanese animation. From the moment he watched his first anime series, [they/he/she] were hooked, and [their/his/her] fascination has only grown stronger over the years.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                       
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Java</span><br>Creating GUI</li>
+                            <li><span>HTML</span><br>Web developer</li>
+                            <li><span>CSS</span><br>Desging web interface</li>
+                        </ul>
+                    </div>
+                   
+                
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023</span><br>Graduated at Pamantasan ng Cabuyao</li>
+                        
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-links");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-links");
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }
+        </script>
+
+      
+            </script>
+       
+        
+</body>
+</html>
